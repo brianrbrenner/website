@@ -34,19 +34,34 @@
       border-radius: 25%;
       width: 175px;
       height: 175px;
-      margin-top: 5%;
       object-fit: cover;
       object-position: 0;
     }
 
+
     .container-sm {
+      display: fit-content;
+      padding: 20px 20px 20px 20px;
       width: 55%;
       background-color: rgba(0, 0, 0, 0.7);
-      height: 55vh;
       text-align: center;
       border-radius: 5px;
     }
 
+    @media (max-width: 800px) {
+        .container-sm {
+          display: fit-content;
+          padding: 20px 20px 20px 20px;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          text-align: center;
+          border-radius: 5px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
     .content {
       padding: 20px;
     }
@@ -71,11 +86,10 @@
       margin-top: 20px;
     }
     .content h4 {
-      margin-top: 20px;
+        margin-bottom: -10px
     }
 
     div.links i {
-      margin-top: -10px;
       padding: 0 10px;
       text-align: center;
       font-size: 30px;
@@ -102,9 +116,8 @@
       <h3>About Me</h3>
       <p>I am currently fulfilling three roles as a full-time student, intern full-stack software developer, and USAF
         Avionics Journeyman. I love to learn and find better ways to solve problems. My main interests are
-        currently systems programming through Rust and C++. I have been skateboarding for over 20 years, and am a big
-        split/ergonomic keyboard enthusiast! My most current build is a Corne LP, and you can find my
-        keymap files on GitHub! You can also find my resume below. Thanks for reading!</p>
+        currently systems and language programming through C and C++. I have been skateboarding for over 20 years, and am a big
+        split/ergonomic keyboard enthusiast! My current projects mostly focus on languages and can be found on my GitHub linked below where you can also find my resume. Thanks for reading!</p>
       <h4>Links</h4>
     </div>
     <div class="links">
